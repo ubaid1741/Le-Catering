@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catering Site</title>
+    <link rel="icon" type="image/x-icon" href="burger icon.avif">
+    <style>
+        
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+Georgian:wght@100..900&display=swap');
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Noto Serif Georgian", sans-serif serif;
+            font-family: "Playfair Display";
+            max-width: 1440px;
+            user-select: none;
+        }
+
+        ul{
+            width: 100%;
+            position: fixed;
+            list-style-type: none;
+            margin: 0;
+            letter-spacing: 4px;
+            padding: 5px 45px 5px 25px ;
+            overflow: hidden;
+            background-color:white;
+            box-shadow: 0 4px 5px 0 rgba(41, 37, 37, 0.2), 0 3px 20px 0 rgba(68, 63, 63, 0.3);
+        }
+        li{
+            float: left;
+        }
+        li a {
+            display: block;
+            text-align: center;
+            padding: 15px 12px;
+            text-decoration: none;
+            color: #607d8b;
+            }
+            li a:hover{
+                background-color: lightgray;
+            }
+            .li-right{
+                float: right;
+            } 
+            @media screen and (max-width: 600px) {
+            li.right, 
+            li {float: none;}
+            ul{
+                background-color: white;
+                opacity: 0.7;
+                margin: 0 0 0 0; 
+                padding: 0 0 0 0;
+                letter-spacing: normal;
+            }
+            li{
+             text-align: left;
+                float: left;
+            }
+            .li-right{
+                padding: 0;
+                margin: 0;
+            }
+         
+}
+#contact-pic{
+    cursor: url("https://potatologics.com/wp-content/uploads/2022/03/Pakistan-3.svg"),auto;
+}
+    
+.background-image{
+            z-index: -1;
+            background-image: url(hamburger.jpg);
+            width: 100%;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            
+        }
+        .text{
+            padding-top: 45%;
+            padding-bottom: 2%;
+            margin-left: 2%;
+            letter-spacing: 4px;
+            color: #6b6c6d;
+            font-size: 40px;
+        }
+
+        .clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+       .col-1{
+        width: 45%;
+        float: left;
+        padding: 6% 0 6% 6%;
+        margin-left: 5%;
+       }
+    
+       .col-2{
+        width: 45%;
+        float: left;
+        padding: 7% 0 7% 0;
+        margin-left: 2%;
+       }
+       
+       .h1 {
+            font-size: 36px;
+            letter-spacing: 4px;
+            padding-left: 110px;
+            padding-top: 10px;
+        }
+
+        .h2 {
+            font-size: 18px;
+            padding-left: 140px;
+            letter-spacing: 3px;
+            padding-top: 30px;
+        }
+
+        .h3 {
+            font-size: 18px;
+            width: 84%;
+            line-height: 1.5;
+            padding-top: 8px;
+        }
+
+        .h4 {
+            font-size: 18px;
+            width: 83%;
+            line-height: 1.5;
+            color: gray;
+        }
+        .col-3{
+            width: 45%;
+        float: left;
+        padding: 6% 0 6% 0;
+        margin-left: 1%;
+        }
+        .menu{
+            padding-left: 271px;
+            font-size: 36px;
+            font-weight: 400;
+            letter-spacing: 5px;
+            padding-top: 30px;
+            margin-bottom: 6%;
+        }
+        .heading{
+            font-size: 20px;
+            font-family: "Playfair Display";
+            font-weight: 500;
+            letter-spacing: 5px;
+            margin-left: 20%;
+            padding: 20px;
+        }
+        .para{
+        font-size: 15px;
+        color: gray;    
+        padding: 8px;
+        margin-left: 22%;
+        }
+        .col-4{
+            width: 45%;
+        float: left;
+        padding: 110px 0 7% 10px;
+        margin-left: 5%;
+        }
+
+        .forms {
+      width: 80%;
+      padding: 20px;
+      padding-left: none;
+      margin: 1%;
+      margin-left: 10%;
+      border-bottom: 0.5px solid gray;
+      border-top: none;
+      border-left: none;
+      border-right: none;
+      font-family: "Noto Serif Georgian", sans-serif serif;
+    }
+
+    .forms1 {
+      padding: 10px;
+      margin-left: 10%;
+      margin-top: 2%;
+      text-align: center;
+      font-family: "Noto Serif Georgian", sans-serif serif;
+      border: none;
+    }
+
+    .forms1:hover {
+      background-color: lightgray;
+    }
+    .end {
+      background-color: lightgray;
+      padding: 50px;
+      margin-top: 10%;
+      text-align: center;
+    }
+        /* Reponsive col-1,2,3,4 */
+        @media screen and (max-width: 600px) {
+            .col-1{
+                width: 100%;
+                text-align: center;
+                padding: 0;
+                border-radius: 8px;
+                margin: 5% 0 5% 0;
+                /* margin: 0; */
+            }
+            .col-2{
+                width: 96%;
+                margin: 2%;
+                padding: 10px;
+                border: 1px solid black;
+                border-radius: 8px;
+                margin-bottom: 5%;
+            }
+            .h1{
+                text-align: center;
+                margin: 0;
+                padding: 0;
+            }
+            .h2{
+                text-align: center;
+                margin: 0;
+                padding: 0;
+            }
+
+            .col-3{
+                width: 96%;
+                text-align: center;
+                margin: 2%;
+                padding: 0;
+                border: 1px solid black;
+                border-radius: 8px;
+                margin-top: 5%;
+            }
+            .menu{
+                text-align: center;
+                margin: 0;
+                padding: 10px;
+            }
+            .heading, .para{
+                text-align: center;
+                margin: 0;
+                padding: 15px;
+            }
+            .col-4{
+                width: 100%;
+                text-align: center;
+                padding: 0;
+                border-radius: 8px;
+                margin: 5% 0 5% 0;
+            }
+            }
+            @media screen and (min-width: 601px) and (max-width: 980px){
+                .col-1{
+                    width: 50%;
+                    margin-top: 25%;
+                    padding: 0;
+                }
+                .col-2{
+                    width: 40%;
+                    margin-top: 8%;
+                    padding: 0;
+                    text-align: center;
+                    margin-bottom: 2%;
+                }
+                .h1{
+                /* text-align: center; */
+                margin: 0;
+                padding: 0;
+            }
+            .h2{
+                /* text-align: center; */
+                margin: 0;
+                padding: 0;
+            }
+            .col-3{
+                width: 50%;
+                text-align: center;
+                margin: 2%;
+                padding: 0;
+                /* border: 1px solid black; */
+                border-radius: 8px;
+                margin-top: 5%;
+            }
+            .menu{
+                text-align: center;
+                margin: 0;
+                padding: 10px;
+            }
+            .heading, .para{
+                text-align: center;
+                margin: 0;
+                padding: 15px;
+            }
+            .col-4{
+                width: 45%;
+                text-align: center;
+                padding: 0;
+                border-radius: 8px;
+                margin: 25% 0 5% 0;
+            }
+
+            }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>   
+             <li><a href="">Gourmet au Catering</a></li> 
+             <div class="li-right">
+             <li><a href="#About">About</a></li>
+             <li><a href="#menu">Menu</a></li>
+             <li><a href="#contact">Contact</a></li>
+            </div>
+        </ul>
+    </nav>
+    <div class="background-image">
+        <div class="text">
+            <p>Le Catering</p>
+        </div>
+    </div>
+ <div class="clearfix">
+    <div class="col-1" id="About">
+        <img src="col-1.jpg" width="96%" style="border-radius: 6px;">
+    </div>
+    <div class="col-2">
+        <p class="h1">About Catering</p><br>
+        <p class="h2">Tradition since 1889</p><br>
+        <p class="h3">The Catering was founded in blabla by Mr. Smith in lorem ipsum dolor sit amet, consectetur
+            adipiscing elit consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+            aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat. Duis aute iruredolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+            pariatur.We only use <span style="background-color: lightgray; padding: 5px;">seasonal</span> ingredients.</p><br>
+        <p class="h4">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim
+            id est laborum consectetur adipiscing elit, sed do eiusmod temporincididunt ut labore et dolore magna
+            aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat.</p>
+    </div>
+    
+</div>
+   <p style="border-bottom: 1px solid rgb(202, 191, 191); margin-left:10% ;
+   margin-right:10%;"></p>
+
+
+<div class="clearfix">
+    <div class="col-3" id="menu">
+        <p class="menu">Our Menu</p>
+        <p class="heading">Bread Basket</p>
+        <p class="para">Assortment of fresh baked fruit breads and muffins 5.50</p>
+            <br>
+        <p class="heading">Honey Almond Granola with Fruits</p>
+        <p class="para">Natural cereal of honey toasted oats, raisins, almonds and dates 7.00</p>
+            <br>
+        <p class="heading">Belgian Waffle</p>
+        <p class="para">Vanilla flavored batter with malted flour 7.50</p>
+            <br>            
+        <p class="heading">Scrambled eggs</p>
+        <p class="para">Scrambled eggs, roasted red pepper and garlic, with green onions 7.50</p>
+        <br>
+        <p class="heading">Blueberry Pancakes</p>
+        <p class="para">With syrup, butter and lots of berries 8.50</p>
+    </div>   
+    
+    <div class="col-4">
+        <img src="col-2.jpg" style="border-radius: 8px; width: 80%;">
+    </div>
+</div>
+
+<p style="border-bottom: 1px solid rgb(184, 181, 181); margin-left:10% ;
+   margin-right:10%; opacity: 0.4"></p>
+<div id="contact">
+    <p style="margin-left: 10%; margin-top: 8%; font-size: 35px ; letter-spacing: 4px;
+    "><span id="contact-pic">Contact</span></p>
+    <p style="margin-left: 10%; margin-top: 4%; width: 80%; font-size: 15px;">We offer full-service catering for any event, large or
+      small. We understand your needs and we will cater the food to satisfy the biggerst criteria of them all, both look
+      and taste. Do not hesitate to contact us.</p>
+    <p style="font-weight: bold;
+    font-size: 18px; color: #607d8b !important; margin-left: 10%; margin-top: 2%">Catering Service, 42nd Living
+      St, 43043 New York, NY</p>
+    <p style="margin-left: 10%; margin-top: 2%; font-size: 15px;">You can also contact us by phone 00553123-2323 or email
+      catering@catering.com, or you can send us a message here:</p>
+  </div>
+<div>
+    <forms>
+      <input class="forms" type="text" class="text" placeholder="Name" required><br>
+      <input class="forms" type="number" class="number" placeholder="How many peoples" required><br>
+      <input class="forms" type="datetime-local" class="datetime-local" required><br>
+      <input class="forms" type="text" class="text" placeholder="Message\Special requirments"><br>
+      <button class="forms1" type="submit">SEND MESSAGE</button>
+    </forms>
+  </div>
+
+  <div>
+    <p class="end">POWERED BY @UBAID</p>
+  </div>
+</body>
+</html>
